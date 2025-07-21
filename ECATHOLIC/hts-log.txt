@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 21 Jul 2025 11:04:58 at http://Khoi%40churchofsaintann.org:Khn-04262002@app.ecatholic.com/hub +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://Khoi%40churchofsaintann%2eorg:Khn%2d04262002@app.ecatholic.com/hub -O1 "C:\My Web Sites\ECATHOLIC" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:04:58	Warning: 	Cache: damaged cache, trying to repair
+11:04:58	Warning: 	Cache: 0 bytes successfully recovered in 0 entries
+11:04:58	Warning: 	Cache: error trying to open the cache
+11:05:00	Warning: 	File not parsed, looks like binary: https://app.ecatholic.com/robots.txt
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 seconds : 7 links scanned, 6 files written (898169 bytes overall) [285806 bytes received at 95268 bytes/sec], 898781 bytes transferred using HTTP compression in 7 files, ratio 31%, 2.0 requests per connection
+(No errors, 4 warnings, 0 messages)

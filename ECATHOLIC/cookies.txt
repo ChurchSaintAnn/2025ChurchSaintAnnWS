@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.ecatholic.com	TRUE	/	FALSE	1999999999	__cf_bm	4_mHhrWxUINnMAKe3H2XuaRV2Mrtws3XcCNDXgmRYpY-1753109854-1.0.1.1-cUcvTXXOZTwm3kpyIIz7RpQ.7LANNvT8Y767Bx6aPb1CvRWqc8CGUlcdWYxBv3BJuFRZF4ETAQYeT7nstR0.n1wU_kI_XscEGWfAl7Rq4JE
+ecatholic.com	TRUE	/	FALSE	1999999999	SameSite	None
+
