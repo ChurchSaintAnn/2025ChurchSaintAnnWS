@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Ann Church</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <img src="images/header.jpg" alt="Church" class="header-image">
+            <div class="title-area">
+                <h1>Saint Ann Church</h1>
+                <p class="motto">A Home of Love and Compassion</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Formation</a></li>
+                <li><a href="#">Ministry</a></li>
+                <li><a href="#">School</a></li>
+                <li><a href="#">Fellowship</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <section class="service-times">
+                <h2>Mass Times</h2>
+                <ul>
+                    <li>Saturday: 5:00 PM</li>
+                    <li>Sunday: 7:00 AM, 9:30 AM</li>
+                    <li>Monday - Friday: 8:00 AM</li>
+                </ul>
+            </section>
+            <section class="confession-times">
+                <h2>Confession</h2>
+                <p>Saturday: 4:00 PM - 4:45 PM</p>
+            </section>
+            <section class="adoration">
+                <h2>Adoration</h2>
+                <p>Friday: 9:00 AM - 5:00 PM</p>
+            </section>
+            <section class="highlighted-links">
+                <h2>Highlighted Links</h2>
+                <ul>
+                    <li>Coming soon...</li>
+                </ul>
+            </section>
+            <section class="events-week">
+                <h2>Events This Week</h2>
+                <ul>
+                    <li>Tag in Calendar</li>
+                    <li>OnLoad: script runs</li>
+                    <li>next 5-6 events</li>
+                    <li>is produced</li>
+                    <li>Formated and linked</li>
+                    <li>Event 6</li>
+                </ul>
+            </section>
+            <section class="events-week">
+                <h2>Questions on Faith Answered</h2>
+                <ul> https://www.magisterium.com/
+                </ul>
+            </section>			
+        </aside>
+
+        <div class="carousel-container">
+            <a href="#" id="carousel-link">
+                <img id="carousel-image" src="images/event1.jpg" alt="Upcoming Event">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            Church:<BR>
+			<a href="https://maps.app.goo.gl/JkGWRNkn7DrRsbJm6">
+			502 South Main St.<BR>
+			Phoenixville, PA 19460 </a>
+        </div>
+        <div class="footer-center">
+            Parish Office: (610) 933-3732
+        </div>
+        <div class="footer-right">
+			Chapel: <BR>
+			<a href="ttps://maps.app.goo.gl/q6N1Ryia7QamMx7t5">
+            502 South Main St.<BR>
+			Phoenixville, PA 19460</a>
+        </div>
+    </footer>
+
+<script>
+const images = [
+    'images/event1.jpg',
+    'images/event2.jpg',
+    'images/event3.jpg',
+    'images/event4.jpg',
+    'images/event5.jpg'
+];
+let current = 0;
+setInterval(() => {
+    current = (current + 1) % images.length;
+    document.getElementById('carousel-image').src = images[current];
+}, 3000);
+</script>
+</body>
+</html>

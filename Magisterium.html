@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ask the Magisterium</title>
+  <script>
+    async function askQuestion() {
+      const question = document.getElementById('question').value;
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = 'Processing...';
+
+      const apiKey = localStorage.getItem('magisterium_api_key');
+      if (!apiKey) {
+        const inputKey = prompt("Please enter your Magisterium API Key (it will be saved for this session):");
+        if (inputKey) {
+          localStorage.setItem('magisterium_api_key', inputKey);
+        } else {
+          resultDiv.innerHTML = 'API key required.';
+          return;
+        }
+      }
+
+      try {
+        const response = await fetch('https://api.magisterium.com/v1/ask', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${localStorage.getItem('magisterium_api_key')}`
+          },
+          body: JSON.stringify({
+            question: question
+          })
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          resultDiv.innerHTML = `Error: ${errorData.message || response.statusText}`;
+        } else {
+          const data = await response.json();
+          resultDiv.innerHTML = `<strong>Answer:</strong><br>${data.answer}`;
+        }
+      } catch (error) {
+        resultDiv.innerHTML = `Error: ${error.message}`;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Ask a Question to the Magisterium API</h1>
+  <label for="question">Enter your question:</label><br>
+  <input type="text" id="question" size="60" placeholder="e.g., What does the Church teach about grace?"><br><br>
+  <button onclick="askQuestion()">Submit</button>
+  <div id="result" style="margin-top: 20px; font-family: sans-serif;"></div>
+</body>
+</html>
